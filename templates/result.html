@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>House Data Results</title>
+</head>
+<html>
+   <body>
+   <h1>Successfully entered the following data</h1>
+      <table border = 1>
+         {% for key, value in result.items() %}
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+	  <br>
+	  <button onclick="location.href = '/data_entry';" id="dataEntryButton" class="float-left submit-button" >Enter Another House</button>
+	  <button onclick="location.href = '/';" id="dataEntryButton" class="float-left submit-button" >Back to Homepage</button>
+   </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>House Data Entry</title>
+</head>
+<body>
+<h1>Data Needed to Predict Price</h1>
+
+      <form action = "http://localhost:5000/predict_price" method = "POST">
+         <p>Zip <input type ="text" name = "zip" /></p>
+		 <p>Sq. Feet <input type ="text" name = "sq_feet" /></p>
+		 <p>Lot Size <input type ="text" name = "lot_size" /></p>
+		 <p>Year of Construction <input type ="text" name = "year_built" /></p>
+		 <p>No. of Bedrooms <input type ="text" name = "bedrooms" /></p>
+		 <p>No. of Bathrooms <input type ="text" name = "bathrooms" /></p>
+         <p><input type = "submit" value = "Submit" /></p>
+      </form>
+
+</body>
+</html>

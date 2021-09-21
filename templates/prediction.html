@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prediction Result</title>
+</head>
+<html>
+   <body>
+   <h1>The predicted price for the home information you entered is:</h1>
+      <br>
+	  <h1 style="color:blue">{{ predicted_price }}</h1>
+	  <br>
+	  <h2>Equation Created:</h2>
+	  <h3> {{ formula }} </h3>
+	  <br>
+	  <button onclick="location.href = '/predict_data_entry';" id="dataEntryButton" class="float-left submit-button" >Predict Another Price</button>
+	  <button onclick="location.href = '/';" id="dataEntryButton" class="float-left submit-button" >Back to Homepage</button>
+   </body>
+</html>
