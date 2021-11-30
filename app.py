@@ -18,9 +18,7 @@ def acre_to_sq_ft(acres):
 # create route that renders index.html template
 @app.route("/")
 def index():
-    player_dictionary = {"player_1": "Jessica",
-                         "player_2": "Mark"}
-    return render_template("index.html", dict=player_dictionary)
+    return render_template("index.html")
     
 @app.route("/data_entry")
 def data_entry():
