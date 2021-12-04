@@ -1,6 +1,6 @@
 # DataQualityDemo
 
-This flask app was created to demonstrate why data quality is important for machine learning models. 
+## This flask app was created to demonstrate why data quality is important for machine learning models. 
 
 This app has two components, a data entry tool and a prediction tool. Users are invited to enter in housing data via the data entry tool which stores the data in a relational database. The prediction tool pulls in the data from the database and uses a simple linear regression model to predict the price of an individual house.
 
